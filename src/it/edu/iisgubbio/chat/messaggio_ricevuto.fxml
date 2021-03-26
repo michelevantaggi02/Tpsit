@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="pannello" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <BorderPane style="-fx-background-color: #ffcf44; -fx-background-radius: 40 40 40 0;" BorderPane.alignment="CENTER">
+         <center>
+            <Label fx:id="testo" text="messaggio" wrapText="true" BorderPane.alignment="CENTER_LEFT">
+               <padding>
+                  <Insets left="8.0" right="8.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </Label>
+         </center>
+         <top>
+            <Label fx:id="utente" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Utente 1" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets left="8.0" right="8.0" />
+               </padding>
+            </Label>
+         </top>
+      </BorderPane>
+   </left>
+   <center>
+      <Label fx:id="ora" text="ora" textFill="WHITE" BorderPane.alignment="CENTER_LEFT" />
+   </center>
+</BorderPane>

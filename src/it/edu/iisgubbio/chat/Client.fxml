@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label fx:id="listaUtenti" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #212121;" text="aaaa" textFill="WHITE" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="8.0" top="8.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets left="8.0" right="8.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <ListView fx:id="listaMessaggi" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" stylesheets="@stile.css" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" />
+         </BorderPane.margin>
+      </ListView>
+   </center>
+   <bottom>
+      <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="0.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="0.0" percentWidth="0.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="testo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #434343ff; -fx-text-fill: white;">
+               <GridPane.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="1.0" />
+               </GridPane.margin>
+            </TextField>
+            <Button fx:id="invia" mnemonicParsing="false" onAction="#inviaMessaggio" pickOnBounds="false" style="-fx-background-color: #008075;" text="Invia" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="8.0" right="8.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>
